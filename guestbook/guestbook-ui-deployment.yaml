@@ -5,6 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: Delete=false
 spec:
+  replicas: 4
   revisionHistoryLimit: 3
   selector:
     matchLabels:
